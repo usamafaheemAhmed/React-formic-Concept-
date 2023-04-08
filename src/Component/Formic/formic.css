@@ -11,6 +11,14 @@
     height: var(--main-height);
     font-family: 'Poppins', sans-serif;
 }
+.modal-content {
+    background: #402661 !important;
+    background: linear-gradient(0deg, #402661 16%, #68388f 91%) !important;
+    max-width: var(--bs-modal-width);
+    margin-right: auto;
+    margin-left: auto;
+    color: #ffff;
+  }
 
 nav a{
     margin-top: 3%;
@@ -63,9 +71,44 @@ nav a{
     color: #ffff;
     border-color: #7edd7e;
     background-color: #7edd7e;
-
-    /* color:red; */
 }
+
+.modal-content Button:nth-child(2){
+    box-shadow: none;
+    font-weight: 600;
+    border-radius: 50px;
+    text-align: center;
+    color: #7edd7e;
+    border-color: #7edd7e;
+    padding: 10px 40px 10px 40px;
+}
+.modal-content Button:hover:nth-child(2){
+    text-align: center;
+    color: #ffff;
+    border-color: #7edd7e;
+    background-color: #7edd7e;
+}
+.btn-close:hover{
+
+    color: #ffff !important;
+    border-color: none !important;
+    background-color: none !important;
+}
+.modal-content Button:nth-child(1){
+    font-weight: 600;
+    border-radius: 50px;
+    text-align: center;
+    color: #ffffff;
+    border-color: #ffffff;
+    padding: 10px 40px 10px 40px;
+}
+.modal-content Button:hover:nth-child(1){
+    text-align: center;
+    color: #776395;
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+
 .mainArea p:nth-child(4){
     color:#776395;
     width: 300px;
@@ -166,3 +209,43 @@ input[type=number] {
     padding: 10px 10px 10px 10px !important;
     margin: 10px 10px 10px 10px;
 }
+
+.resultDiv{
+    height: 439px;
+    /* width: 400px; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

@@ -24,16 +24,10 @@ const Formic = () => {
  
   return (
     <div className='FormicBackGround container-fluid'>
-        <Row className='mb-4'>
-          <nav className="nav">
-          <Col md="6" className='Logo' >
-          <a className="nav-link active" href="./Formic" aria-current="page">Active link</a>
-          </Col>
-          <Col md='6' className='Menu'>
-          <a className="nav-link  " href="./Formic">Stay Informed</a>
-          <a className="nav-link " href="./Formic">Get Personal Report</a>
-          </Col>
-          </nav>
+        <Row className='mb-4 Navigation'>
+           <a className="nav-link active firstNav" href="./Formic" aria-current="page">Active link</a>
+           <a className="nav-link secondNav" href="./Formic">Stay Informed</a>
+           <a className="nav-link thirdNav" href="./Formic">Get Personal Report</a>
         </Row>
         <Row className='mainArea text-light px-5'>
           <Col md="5" className=' pt-5'>
@@ -83,12 +77,12 @@ const Formic = () => {
           {({isSubmitting})=>{
             return  (
               <Form>
-          <Modal.Body>
+          <Modal.Body className='p-4'>
                 <label className="my-2" for="email">Email:</label>
                 <Field type="text" id="email" name="email" className="form-control firstInput" />
                 <ErrorMessage  name="email" component="div"/>
                 <label className="my-2" for="password">Password:</label>
-                <Field type="text" id="password" name="password" className="form-control firstInput" />
+                <Field type="password" id="password" name="password" className="form-control firstInput" />
                 <ErrorMessage  name="password" component="div"/>
           </Modal.Body>
           <Modal.Footer>
@@ -144,7 +138,7 @@ const Formic = () => {
               if(!result){
                 return  (
                   <Form className="slide-in-left">  
-                    <div className="row">
+                    <div className="row p-3">
                     <div className="col-md-12">
                         <div className="row">
                             <div className="col-md-9 pt-2">
@@ -168,7 +162,7 @@ const Formic = () => {
                     </div>
                     <ErrorMessage className="text-center" name="range1" component="div"/>
                 </div>
-              <div className="row">
+              <div className="row p-3">
                 <div className="col-md-12">
                     <div className="row">
                         <div className="col-md-9 pt-2">
@@ -192,7 +186,7 @@ const Formic = () => {
                 </div>
                 <ErrorMessage className="text-center" name="range2" component="div"/>
                 </div>
-                <div className="row">
+                <div className="row p-3">
                   <div className="col-md-12">
                       <div className="row">
                           <div className="col-md-9 pt-2">

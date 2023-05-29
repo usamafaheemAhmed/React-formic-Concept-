@@ -10,6 +10,7 @@
     background: linear-gradient(0deg, #402661 16%, #68388f 91%);
     height: var(--main-height);
     font-family: 'Poppins', sans-serif;
+    height: 643px;
 }
 .modal-content {
     background: #402661 !important;
@@ -19,23 +20,35 @@
     margin-left: auto;
     color: #ffff;
   }
-
-nav a{
+.firstNav{
+    width: 50%;
+    max-width: 50%;
+    min-width: fit-content;
+    color: #ffff;
+    font-size: large;
+    font-weight: 700;
     margin-top: 3%;
-    color: white !important;
-    font-weight: 600 !important;
+    padding-left: 6%;
 }
-.Logo{
-    padding-left: 5%;
+.secondNav{
+    width: 25%;
+    max-width: 50%;
+    min-width: fit-content;
+    color: #ffff;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 3%;
 }
-.Menu{
-    display: flex;
-    direction: column;
-    align-items: end;
-    justify-content: end;
-    gap: 10%; 
-    padding-right: 5%;
+.thirdNav{
+    width: 25%;
+    max-width: 50%;
+    min-width: fit-content;
+    color: #ffff;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 3%;
 }
+
 .mainArea .card{
     background: #8a5bc0;
     background: linear-gradient(0deg, #54307d 16%, #6d449c 91%);

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+
+
+.box{
+    padding-top: 10%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+    border:2px solid #1C85E8;
+    margin-top: 0px 0px 0px 0px  !important;
+    padding: 0px 0px 0px 0px  !important;
+}
+.card img{
+    margin-top: 10%;
+}
+.card .card-body{
+    margin:0px 0px 0px 0px  !important;
+    padding: 0px 0px 0px 0px  !important;
+}
+
+.card2{
+    background-color: #c5e3ff;
+    color: #1C85E8;
+    border:none;
+    padding: 0px 20px 20px 20px !important;
+}
+
+.MuiInputBase-input{
+    border-radius: 25% !important;
+}
+.card2 h5{
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+
+.subTitle {
+    color: #9bcefe;
+    font-size: 12px;
+    margin-left: 25%;
+}
